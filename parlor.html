@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parlor</title>
+    <link rel="stylesheet" href="parlor.css">
+    <style>
+        body {
+            background: rgba(0, 0, 0, 0.5) url("th (5).jfif");
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+        header{
+        background-color: rgb(209, 23, 169);
+        border-radius: 30px;
+        border: 2px solid gray;
+    }
+
+    .nevbar ul {
+        overflow: auto;
+    }
+
+    .nevbar li {
+        float: left;
+        list-style: none;
+        margin: 10px 15px;
+    }
+
+    .nevbar li a {
+        padding: 3px 3px;
+        text-decoration: none;
+        color: white;
+    }
+    h2 {
+        text-align: center;
+        color: white;
+        font-family: cursive;
+
+    }
+
+    h3 {
+        text-align: center;
+        color: white;
+        font-family: cursive;
+    }
+    p {
+
+color: white;
+text-align: center;
+font-family: cursive;
+font-size: 10px;
+line-height: 1.3em;
+font-weight: bold;
+
+}
+h4 {
+        /* background: ; */
+        color: white;
+        margin: 0;
+        padding: 10px 100px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: normal;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        text-align: center;
+    }
+    .list{
+        /* height: 80vh; */
+            /* background-color: burlywood; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+    }
+    .box {
+            background:url("e5ed09f006f388f563953296f10cd80a.jpg");
+            background-size: cover;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 200px;
+            width: 200px;
+            transition: all 1s ease-in-out;
+        }
+        .box:hover {
+            transform: rotate(360deg);
+            transform: skew(40deg);
+            transform: scale(3);
+
+        }
+    .container{
+            
+            background-color: rgb(221, 32, 180);
+            border:gray;
+            padding: 34px;
+            margin: 4px;
+            text-align: center;
+             
+        }
+        #time{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nev class="nevbar">
+            <ul>
+                <li><a href="/testmoner.html">Testmoney</a></li>
+                <li><a href="/Term.html">Team</a></li>
+                <li><a href="/Gallery.html">Gallery</a></li>
+                <li><a href="/features.html">Features</a></li>
+                <li><a href="/design.html">Design</a></li>
+                <li><a href="/about.html">Home</a></li>
+            </ul>
+        </nev>
+    </header>
+    <h2>Beauty Salon</h2>
+    <p>Get our letest 2021 collection</p>
+    <div id="container">
+        <h4>Welcome to the Beauty Blush</h4>
+        <p>Behind every beautiful woman is hairstylist.visit us today</p>
+        </div>
+        <div class="list">
+            <div class="box">
+
+            </div>
+        </div>
+
+    <div class="container">
+        current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date and time tutorial");
+        let now = new Date();
+        console.log(now);
+
+        // let newDate=new Date("2000-11-30");
+        // console.log(newDate);
+
+        //let newDate= new Date(year,month,date,hours,minutes,seconds,milliseconds);
+        let newDate = new Date(2000, 11, 30, 9, 3, 2, 4);
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log("This year is", yr);
+
+        let dt = newDate.getDate();
+        console.log("This date is", dt);
+
+
+        let month = newDate.getMonth();
+        console.log("This month is", month);
+
+
+        let hours = newDate.getHours();
+        console.log("This hours is", hours);
+
+        setInterval(updateTime, 1000);
+
+        function updateTime(){
+            time.innerHTML=new Date();
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
